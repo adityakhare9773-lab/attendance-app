@@ -101,7 +101,7 @@ function App() {
     const student = students[currentIndex];
 
     await fetch(
-      "http://localhost:5000/api/attendance",
+      "https://attendance-app-28vf.onrender.com/api/attendance",
       {
         method: "POST",
 
@@ -154,7 +154,7 @@ function App() {
     const student = students[currentIndex];
 
     await fetch(
-      "http://localhost:5000/api/attendance",
+      "https://attendance-app-28vf.onrender.com/api/attendance",
       {
         method: "POST",
 
@@ -209,7 +209,7 @@ function App() {
   ) => {
 
     await fetch(
-      `http://localhost:5000/api/attendance/${rollNo}`,
+      `https://attendance-app-28vf.onrender.com/api/attendance/${rollNo}`,
       {
         method: "PUT",
 
@@ -265,18 +265,18 @@ function App() {
   // ATTENDANCE COMPLETED
   // =========================
 
- if (currentIndex >= students.length) {
+  if (currentIndex >= students.length) {
 
-  return (
-    <AttendanceSummary
-      students={students}
-      attendance={attendance}
-      onChangeAttendance={changeAttendance}
-      onBack={goBackToSessionSelection}
-    />
-  );
+    return (
+      <AttendanceSummary
+        students={students}
+        attendance={attendance}
+        onChangeAttendance={changeAttendance}
+        onBack={goBackToSessionSelection}
+      />
+    );
 
-}
+  }
 
 
   // =========================
