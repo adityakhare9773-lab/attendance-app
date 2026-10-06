@@ -100,7 +100,7 @@ function App() {
 
     const student = students[currentIndex];
 
-    await fetch(
+     fetch(
       "https://attendance-app-28vf.onrender.com/api/attendance",
       {
         method: "POST",
@@ -153,7 +153,7 @@ function App() {
 
     const student = students[currentIndex];
 
-    await fetch(
+     fetch(
       "https://attendance-app-28vf.onrender.com/api/attendance",
       {
         method: "POST",
@@ -208,7 +208,7 @@ function App() {
     editSession
   ) => {
 
-    await fetch(
+     fetch(
       `https://attendance-app-28vf.onrender.com/api/attendance/${rollNo}`,
       {
         method: "PUT",
